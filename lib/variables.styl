@@ -2,14 +2,28 @@
  * Expose `button` variables.
  */
 
-$button-selector-prefix ?= "btn"
-$button-font-size ?= 14px
-$button-font-family ?= "Helvetica Neue", Helvetica, Arial, sans-serif;
-$button-line-height ?= 20px
-$button-padding-vertical ?= 10px
-$button-padding-horizontal ?= 10px
-$button-border-radius-base ?= 3px
-$button-font-weight ?= 400
-$button-default-color ?= #555
-$button-default-bg ?= white
-$button-border-radius ?= 4px
+button--font-size   ?= font-size--base
+button--font-family ?= inherit
+button--font-weight ?= 400
+button--line-height ?= line-height--base
+
+button--padding-vertical   ?= padding--base-vertical
+button--padding-horizontal ?= padding--base-horizontal
+
+button--border-radius   ?= 3px
+
+button--selector-prefix ?= "button"
+button--selector-hover  ?= "hover"
+button--selector-active ?= "active"
+
+button--default-color        ?= #656
+button--default-bg           ?= #fff
+button--default-border-color ?= #777
+
+button--transparent-color        ?= #fff
+button--transparent-bg           ?= orange
+button--transparent-border-color ?= transparent
+
+button--primary-color        ?= #fff
+button--primary-bg           ?= orange
+button--primary-border-color ?= darken(button--primary-color, 10%)

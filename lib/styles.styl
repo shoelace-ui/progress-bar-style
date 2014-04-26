@@ -1,0 +1,17 @@
+/**
+ * Module dependencies
+ */
+
+@require './variables'
+@require './mixins'
+
+/**
+ * Apply `button` default styles.
+ */
+
+[class^={button--selector-prefix}]
+  @extend $button--generic
+
+button--constructor('default', button--default-color, button--default-bg, button--default-border-color)
+button--constructor('transparent', button--transparent-color, button--transparent-bg, button--transparent-border-color)
+button--constructor('primary', button--primary-color, button--primary-bg, button--primary-border-color)

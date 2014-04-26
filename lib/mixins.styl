@@ -8,23 +8,26 @@
  * Generic `button` styles.
  */
 
-$$button-generic
+$button--generic
+  border-radius button--border-radius
+  cursor pointer
   display inline-block
+  font-family button--font-family
+  font-size button--font-size
+  font-weight button--font-weight
+  line-height button--line-height
   margin-bottom 0
-  padding $button-padding-vertical $button-padding-horizontal
-  font-family $button-font-family
-  font-size $button-font-size
-  font-weight $button-font-weight
-  line-height $button-height-base
-  border-radius $button-border-radius
+  padding button--padding-vertical button--padding-horizontal
   text-align center
   text-decoration none
-  vertical-align middle
-  cursor pointer
-  white-space nowrap
   user-select none
+  vertical-align middle
+  white-space nowrap
 
-  tab-focus()
+  &:focus
+    outline thin dotted #333
+    outline 5px auto -webkit-focus-ring-color
+    outline-offset -2px
 
   &.hover
   &:hover
@@ -41,7 +44,7 @@ $$button-generic
   &[disabled]
   fieldset[disabled] &
     cursor not-allowed
-    pointer-events none // future-proof disabling of clicks
+    pointer-events none
     opacity .65
     box-shadow none
 
@@ -56,31 +59,16 @@ $$button-generic
  * @api public
  */
 
---button-constructor(name, text-color, bg-color, border-color)
-  .{$button-selector-prefix}-{name}
+button--constructor(name, text-color, bg-color, border-color)
+  .{button--selector-prefix}-{name}
     background bg-color
     color text-color
-    border 1px solid border-color
+    border-width 1px
+    border-style solid
+    border-color border-color
 
     &.hover
     &:hover
     &:focus
+
       color text-color
-
-/**
- * Function to apply `button` default styles.
- *
- * @type function
- * @api public
- */
-
---button-apply-defaults()
-
-  [class^={$button-selector-prefix}]
-    @extend $$button-generic
-
-  --button-constructor('default', #555, white, #888)
-  --button-constructor('primary', white, blue, darkBlue)
-  --button-constructor('warning', white, orange, red)
-  --button-constructor('danger', white, red, darkRed)
-  --button-constructor('success', white, green, darkGreen)

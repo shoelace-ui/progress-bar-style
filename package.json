@@ -1,5 +1,5 @@
 {
-  "name": "button",
+  "name": "shoelace-ui-button",
   "version": "0.0.1",
   "description": "Default button styles",
   "repository": "https://github.com/shoelace-ui/button.git",
@@ -17,6 +17,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "tab-focus": "git://github.com/shoelace-ui/tab-focus"
+    "shoelace-ui-line-height": "git+https://github.com/shoelace-ui/line-height.git",
+    "shoelace-ui-font-size": "git+https://github.com/shoelace-ui/font-size.git",
+    "shoelace-ui-padding": "git+https://github.com/shoelace-ui/padding.git"
   }
 }
