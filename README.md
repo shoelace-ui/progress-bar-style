@@ -1,9 +1,11 @@
-# button
+# progress bar
+Default progress bar styles
 
-Default button styles.
-
-## Usage
-
-```stylus
-@require 'button'
+## Installation
+```sh
+$ npm install git://github.com/shoelace-ui/progress-bar.git
 ```
+
+## License
+
+[MIT](./LICENSE)

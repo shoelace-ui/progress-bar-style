@@ -1,14 +1,14 @@
 {
-  "name": "button",
-  "repo": "shoelace-ui/button",
-  "description": "Default button styles",
+  "name": "progress-bar",
+  "repo": "shoelace-ui/progress-bar",
+  "description": "Default progress bar styles",
   "version": "0.0.1",
   "keywords": [
     "shoelace",
-    "buttons",
-    "button"
+    "progress",
+    "progress bars"
   ],
-  "styles": ["dist/button.css"],
+  "styles": ["dist/progress-bar.css"],
   "dependencies": {},
   "development": {},
   "license": "MIT"

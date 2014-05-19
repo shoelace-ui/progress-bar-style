@@ -1,15 +1,15 @@
 {
-  "name": "shoelace-ui-button",
+  "name": "shoelace-ui-progress-bar",
   "version": "0.0.1",
-  "description": "Default button styles",
-  "repository": "https://github.com/shoelace-ui/button.git",
+  "description": "Default progress bar styles",
+  "repository": "https://github.com/shoelace-ui/progress-bar.git",
   "keywords": [
     "stylus",
     "shoelace",
-    "buttons",
-    "button"
+    "progress",
+    "progress bar"
   ],
-  "author": "Michael Andrew Vanasse <mail@mndvns.com>",
+  "author": "Brannon Lucas <brannonlucas@gmail.com",
   "contributors": [],
   "devDependencies": {
     "serve": "^1.4.0",
@@ -19,6 +19,8 @@
   "dependencies": {
     "shoelace-ui-line-height": "git+https://github.com/shoelace-ui/line-height.git",
     "shoelace-ui-font-size": "git+https://github.com/shoelace-ui/font-size.git",
-    "shoelace-ui-padding": "git+https://github.com/shoelace-ui/padding.git"
+    "shoelace-ui-padding": "git+https://github.com/shoelace-ui/padding.git",
+    "shoelace-ui-font": "git://github.com/shoelace-ui/font",
+    "shoelace-ui-font-family": "git://github.com/shoelace-ui/font-family"
   }
 }
