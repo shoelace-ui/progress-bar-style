@@ -1,0 +1,17 @@
+@require './variables'
+
+/* Webkit */
+progress[value]
+  &::-webkit-progress
+    /* Progress bar background styling*/
+    &-bar
+      background-color progress-bar--background-color
+      border-radius progress-bar--border-radius
+      box-shadow progress-bar--box-shadow
+
+    /* Progress bar foreground (actual progress bar) styling */
+    &-value
+      background-image -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, progress-bar--gradient-color-left, progress-bar--gradient-color-right)
+
+      border-radius progress-bar--border-radius
+      background-size progress-bar--background-size
