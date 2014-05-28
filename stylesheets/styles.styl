@@ -14,7 +14,6 @@
 
 progress:not([value])
   width progress-bar--width
-  -moz-box-sizing border-box
 
 /**
  * Generic determinant `progress` styles.
@@ -29,11 +28,10 @@ progress[value]
   -moz-appearance none
   appearance none
 
+  /* For FF */
   border-radius progress-bar--border-radius
   box-shadow progress-bar--box-shadow
   background-color progress-bar--background-color
-
-  /* Remove FF default border */
   border none
 
   /* For IE10 */
