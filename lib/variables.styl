@@ -1,0 +1,26 @@
+/*
+ * Progressbar variables
+ */
+
+progress-bar--width         ?= 130px
+progress-bar--height        ?= 20px
+progress-bar--border-radius ?= 2px
+
+/* Progress bar colors */
+progress-bar--gradient-color-left   ?= #ffcf3e
+progress-bar--gradient-color-right  ?= #306199
+progress-bar--html-fallback-color   ?= #0800ff
+
+/* Determinant Gradients */
+progress-bar--webkit-gradient       ?= -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, progress-bar--gradient-color-left, progress-bar--gradient-color-right)
+progress-bar--moz-gradient          ?= -moz-linear-gradient(135deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -moz-linear-gradient(left, progress-bar--gradient-color-left, progress-bar--gradient-color-right)
+
+/* Indeterminant Gradients */
+progress-bar--webkit-i-gradient     ?= -webkit-linear-gradient(45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, progress-bar--gradient-color-left, progress-bar--gradient-color-right)
+progress-bar--moz-i-gradient        ?= -moz-linear-gradient(-135deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -moz-linear-gradient(left, progress-bar--gradient-color-left, progress-bar--gradient-color-right)
+
+/* Background Color/Effects */
+progress-bar--background-size           ?= 35px 20px, 100% 100%, 100% 100%
+progress-bar--background-color          ?= #eee
+progress-bar--background-shadow-color   ?= rgba(0, 0, 0, 0.25)
+progress-bar--box-shadow                ?= 0 2px 5px progress-bar--background-shadow-color inset

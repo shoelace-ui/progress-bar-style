@@ -1,5 +1,5 @@
 
-PORT ?= 3000
+PORT ?= 3001
 SERVE ?= ./node_modules/.bin/serve
 STYLUS ?= ./node_modules/.bin/stylus
 

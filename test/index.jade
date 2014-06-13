@@ -1,10 +1,9 @@
 doctype html
 html
   head
-    script(src="./index.js")
     style
       :stylus
-        @require "../index.styl"
+        @require '../index'
 
   body
     p Styled
@@ -17,11 +16,11 @@ html
     progress() Progress: ? done.
 
     p HTML Fallback
-    div(class="progress-bar")
+    div(class="progress-bar-fallback")
       span(style="width: 0%;") Progress: 0%
-    div(class="progress-bar")
+    div(class="progress-bar-fallback")
       span(style="width: 50%;") Progress: 50%
-    div(class="progress-bar")
+    div(class="progress-bar-fallback")
       span(style="width: 100;") Progress: 100%
-    div(class="progress-bar")
+    div(class="progress-bar-fallback")
       span(class="undefined") Progress: Undefined

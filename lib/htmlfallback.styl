@@ -4,7 +4,7 @@
  * HTML fallback
  */
 
-.progress-bar
+.progress-bar-fallback
   background-color progress-bar--background-color
   border-radius progress-bar--border-radius
   box-shadow progress-bar--box-shadow
@@ -15,6 +15,8 @@
   position relative
   display block
 
+  margin-bottom 1px
+
   > span
     background-color progress-bar--html-fallback-color
     border-radius progress-bar--border-radius
@@ -22,7 +24,10 @@
     display block
     text-indent -9999px
 
+    height 100%
+
   .undefined
     text-indent -9999px
-
+    background-color progress-bar--backgound-color
     background repeating-linear-gradient(45deg, #fff, #fff 10px, #67ccff 10px, #67ccff 20px)
+    box-shadow progress-bar--box-shadow

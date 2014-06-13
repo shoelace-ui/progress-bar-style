@@ -1,17 +1,13 @@
 {
-  "name": "progress-bar",
-  "repo": "shoelace-ui/progress-bar",
-  "description": "styling for progress bars",
+  "name": "progress",
+  "repo": "shoelace-ui/progress-bar-style",
+  "description": "styling for progress bar",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {},
   "development": {},
   "license": "MIT",
-  "main": "index.js",
-  "scripts": [
-    "index.js"
-  ],
   "styles": [
-    "progress-bar.css"
+    "dist/progress-bar-style.css"
   ]
 }

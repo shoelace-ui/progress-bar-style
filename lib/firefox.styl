@@ -1,0 +1,16 @@
+@require './variables'
+
+/* Firefox */
+progress[value]
+  -moz-appearance none
+
+  border-radius progress-bar--border-radius
+  box-shadow progress-bar--box-shadow
+  background-color progress-bar--background-color
+  border none
+
+  &::-moz-progress-bar
+    border-radius progress-bar--border-radius
+    background-size progress-bar--background-size
+
+    background-image progress-bar--moz-gradient

@@ -1,0 +1,42 @@
+@require './variables'
+
+/* Webkit */
+progress[value]
+  -webkit-appearance none
+
+  &::-webkit-progress
+    /* Progress bar background styling*/
+    &-bar
+      background-color progress-bar--background-color
+      border-radius progress-bar--border-radius
+      box-shadow progress-bar--box-shadow
+
+    /* Progress bar foreground (actual progress bar) styling */
+    &-value
+      background-image progress-bar--webkit-gradient
+
+      border-radius progress-bar--border-radius
+      background-size progress-bar--background-size
+
+
+/* Indeterminant */
+progress:not([value])
+  -webkit-appearance none
+
+  background-color progress-bar--background-color
+  border-radius progress-bar--border-radius
+
+  &::-webkit-progress-bar
+    border-radius 2px
+    background-image progress-bar--webkit-i-gradient
+    background-size progress-bar--background-size
+    background-repeat repeat-x
+    background-position 0px 0px
+
+    -webkit-animation slide 3s linear infinite
+
+@-webkit-keyframes slide
+  from
+    background-position 0px 0px
+  to
+    background-position 35px 0px
