@@ -23,9 +23,11 @@ progress[value]
 progress:not([value])
   -webkit-appearance none
 
+  /* Background Styling */
   background-color progress-bar--background-color
   border-radius progress-bar--border-radius
 
+  /* Progress Bar Styling */
   &::-webkit-progress-bar
     border-radius 2px
     background-image progress-bar--webkit-i-gradient
@@ -33,7 +35,7 @@ progress:not([value])
     background-repeat repeat-x
     background-position 0px 0px
 
-    -webkit-animation slide 3s linear infinite
+    -webkit-animation slide progress-bar--animation-default linear infinite
 
 @-webkit-keyframes slide
   from
